@@ -5,7 +5,7 @@ import { IProduct } from 'app/shared/model/store/product.model';
 
 @Component({
   selector: 'jhi-product-detail',
-  templateUrl: './product-detail.component.html',
+  templateUrl: './product-detail.component.html'
 })
 export class ProductDetailComponent implements OnInit {
   product: IProduct | null = null;

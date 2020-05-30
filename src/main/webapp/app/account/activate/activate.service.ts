@@ -10,7 +10,7 @@ export class ActivateService {
 
   get(key: string): Observable<{}> {
     return this.http.get(SERVER_API_URL + 'services/auth/api/activate', {
-      params: new HttpParams().set('key', key),
+      params: new HttpParams().set('key', key)
     });
   }
 }

@@ -6,18 +6,18 @@ import { RouterModule } from '@angular/router';
     RouterModule.forChild([
       {
         path: 'product',
-        loadChildren: () => import('./store/product/product.module').then(m => m.StoreProductModule),
+        loadChildren: () => import('./store/product/product.module').then(m => m.StoreProductModule)
       },
       {
         path: 'cart',
-        loadChildren: () => import('./cart/cart.module').then(m => m.GatewayCartModule),
+        loadChildren: () => import('./cart/cart/cart.module').then(m => m.CartCartModule)
       },
       {
         path: 'order',
-        loadChildren: () => import('./order/order.module').then(m => m.GatewayOrderModule),
-      },
+        loadChildren: () => import('./order/order/order.module').then(m => m.OrderOrderModule)
+      }
       /* jhipster-needle-add-entity-route - JHipster will add entity modules routes here */
-    ]),
-  ],
+    ])
+  ]
 })
 export class GatewayEntityModule {}

@@ -43,7 +43,7 @@ describe('Product e2e test', () => {
     await promise.all([
       productUpdatePage.setTitleInput('title'),
       productUpdatePage.setAmountInput('5'),
-      productUpdatePage.setPriceInput('5'),
+      productUpdatePage.setPriceInput('5')
     ]);
 
     expect(await productUpdatePage.getTitleInput()).to.eq('title', 'Expected Title value to be equals to title');

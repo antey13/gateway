@@ -10,7 +10,7 @@ import { ProductService } from './product.service';
 
 @Component({
   selector: 'jhi-product-update',
-  templateUrl: './product-update.component.html',
+  templateUrl: './product-update.component.html'
 })
 export class ProductUpdateComponent implements OnInit {
   isSaving = false;
@@ -19,7 +19,7 @@ export class ProductUpdateComponent implements OnInit {
     id: [],
     title: [null, [Validators.required]],
     amount: [],
-    price: [null, [Validators.required, Validators.min(0)]],
+    price: [null, [Validators.required, Validators.min(0)]]
   });
 
   constructor(protected productService: ProductService, protected activatedRoute: ActivatedRoute, private fb: FormBuilder) {}
@@ -35,7 +35,7 @@ export class ProductUpdateComponent implements OnInit {
       id: product.id,
       title: product.title,
       amount: product.amount,
-      price: product.price,
+      price: product.price
     });
   }
 
@@ -59,7 +59,7 @@ export class ProductUpdateComponent implements OnInit {
       id: this.editForm.get(['id'])!.value,
       title: this.editForm.get(['title'])!.value,
       amount: this.editForm.get(['amount'])!.value,
-      price: this.editForm.get(['price'])!.value,
+      price: this.editForm.get(['price'])!.value
     };
   }
 

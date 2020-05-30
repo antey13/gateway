@@ -1,0 +1,28 @@
+{
+  "gatewayApp": {
+    "cartCart": {
+      "home": {
+        "title": "Carts",
+        "createLabel": "Créer un nouveau Cart",
+        "createOrEditLabel": "Créer ou éditer un Cart",
+        "notFound": "Aucun Cart trouvé"
+      },
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Cart {{ id }} ?"
+      },
+      "detail": {
+        "title": "Cart"
+      },
+      "userName": "User Name",
+      "productTitle": "Product Title",
+      "amount": "Amount"
+    }
+  },
+  "cartApp": {
+    "cartCart": {
+      "created": "Un nouveau Cart a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Cart avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Cart avec l'identifiant {{ param }} a été supprimé"
+    }
+  }
+}
